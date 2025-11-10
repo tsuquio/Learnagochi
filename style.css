@@ -1,0 +1,105 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+#bg-video {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 1920px;
+    height: 1080px;
+    z-index: -1;
+    object-fit: cover;
+    
+}
+
+
+.main-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  gap: 20px;              
+  z-index: 1;
+}
+
+#title-img {
+    width: min(40vw, 400px);
+    height: auto;
+}
+
+
+#start-buttons, #exit-buttons {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.socials {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    gap: 15px;
+    z-index: 2;
+}
+
+#volume-button {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  cursor: pointer;
+  z-index: 2;
+  transition: transform 0.2s;
+}
+
+#volume-button:hover {
+  transform: scale(1.1);
+}
+
+.cutscene {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; 
+  z-index: 1;
+}
+
+.cutscene input[type="text"] {
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 300px;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.cutscene input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+.cutscene input[type="text"]:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px transparent inset !important;
+  -webkit-text-fill-color: white !important;
+}

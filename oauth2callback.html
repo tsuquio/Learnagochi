@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>OAuth2 Callback</title>
+</head>
+<body>
+<script>
+(function(){
+  const payload = { hash: window.location.hash, search: window.location.search };
+  try {
+    if (window.opener && window.location.origin === window.opener.location.origin) {
+      window.opener.postMessage(payload, window.location.origin);
+      window.close();
+    } else {
+      document.body.textContent = JSON.stringify(payload);
+    }
+  } catch (err) {
+    document.body.textContent = 'Callback error: ' + err.message;
+  }
+})();
+</script>
+</body>
+</html>

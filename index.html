@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Learnagochi</title>
+</head>
+<body>
+  <section id="start-screen" class="main-title">
+    <img id="title-img" src="assets/Title.png" alt="Learnagochi Title" />
+    <img id="start-button" src="assets/Start-button.png" alt="Start Game" />
+    <img id="exit-button" src="assets/Exit-button.png" alt="Exit Game" />
+  </section>
+
+  <section id="cutscene-screen" class="cutscene" style="display: none;">
+      <img src="assets/Enter your name_.png" alt="Enter your name" />
+    <img src="assets/Hey, What’s your name_.png" alt="Hey, What's your name?" />
+
+
+    <input
+      type="text"
+      id="player-name"
+      placeholder=""
+      maxlength="6"
+      autocomplete="off"
+    />
+
+    <img
+      id="google-signin"
+      src="assets/Google.png"
+      alt="Sign in with Google"
+      style="cursor: pointer"
+    />
+  </section>
+
+  <footer class="socials">
+    <a href="https://instagram.com/nexusthenextgen" target="_blank" rel="noopener">
+      <img id="instagram-icon" src="assets/Instagram.png" alt="Instagram" />
+    </a>
+    <a href="https://facebook.com/nexusnextgen" target="_blank" rel="noopener">
+      <img id="facebook" src="assets/Facebook.png" alt="Facebook" />
+    </a>
+  </footer>
+
+  <video autoplay muted loop id="bg-video">
+    <source src="assets/rainypond.mp4" type="video/mp4" />
+  </video>
+
+  <audio id="bg-music" src="assets/bg-music.mp3" autoplay loop></audio>
+  <img id="volume-button" src="assets/Volume-on.png" alt="Toggle Volume" />
+
+  <script src="renderer.js"></script>
+</body>
+</html>
