@@ -103,3 +103,32 @@ html, body {
   box-shadow: 0 0 0px 1000px transparent inset !important;
   -webkit-text-fill-color: white !important;
 }
+
+
+@media (max-width: 600px) {
+  .main-title {
+    gap: 4vh;
+  }
+
+  #title-img {
+    width: 70vw;
+  }
+
+  #volume-button {
+    width: 32px;
+    height: 32px;
+    top: 1vh;
+    right: 1vw;
+  }
+
+  .socials {
+    bottom: 1vh;
+    left: 1vw;
+    gap: 10px;
+  }
+
+  .cutscene input[type="text"] {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}
