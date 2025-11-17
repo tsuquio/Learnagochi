@@ -1,6 +1,6 @@
 const video = document.getElementById('bg-video');
 video.playbackRate = 0.5;
-
+console.log("HELLO");
 const startScreen = document.getElementById('start-screen');
 const cutsceneScreen = document.getElementById('cutscene-screen');
 
