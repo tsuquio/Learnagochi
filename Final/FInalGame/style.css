@@ -1,0 +1,54 @@
+#main-ui {
+    width: 100vw;
+    height: 100vh;
+}
+
+#main-video {
+    width: auto;
+    height: 100vh;
+}
+#game-area {
+    width: auto;
+    background-color: grey;
+    flex: 1;
+}
+
+#value-container {
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+}
+
+#value-container > div {
+    position: absolute; 
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #000;
+    cursor: grab;
+    user-select: none; 
+    font-size: 100px;
+}
+
+#box-container img.box.highlight {
+    border-color: blue;
+    background-color: lightblue;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+
+
+body {
+    display: flex;
+    margin: 0;
+    overflow: hidden;
+}
