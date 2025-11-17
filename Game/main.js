@@ -84,7 +84,7 @@ function spawnValue() {
                 div.style.top = originalPosition.top + 'px';
 
                 const xOverlay = document.createElement('img');
-                xOverlay.src = 'x.png';
+                xOverlay.src = 'assets/x.png';
                 xOverlay.style.position = 'absolute';
                 xOverlay.style.width = '200px';
                 xOverlay.style.height = '200px';
@@ -100,7 +100,7 @@ function spawnValue() {
                 div.remove();
 
                 const checkOverlay = document.createElement('img');
-                checkOverlay.src = 'check.png'; 
+                checkOverlay.src = 'assets/check.png'; 
                 checkOverlay.style.position = 'absolute';
                 checkOverlay.style.width = '200px';
                 checkOverlay.style.height = '200px';
@@ -124,3 +124,4 @@ function spawnValue() {
 
 // Start the first value
 spawnValue();
+
