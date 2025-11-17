@@ -5,7 +5,6 @@ const startScreen = document.getElementById('start-screen');
 const cutsceneScreen = document.getElementById('cutscene-screen');
 
 document.getElementById('start-button').addEventListener('click', () => {
-  window.location.href = "/Game";
   startScreen.style.display = 'none';
   cutsceneScreen.style.display = 'flex';
 });
